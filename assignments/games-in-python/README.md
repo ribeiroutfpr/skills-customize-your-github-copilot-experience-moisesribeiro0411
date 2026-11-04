@@ -1,19 +1,33 @@
+# 📘 Atividade: Jogo da Forca em Python
 
-# 🎮 Desafio: Jogo da Forca
+## 🎯 Objetivo
 
-Construa o clássico jogo de adivinhar palavras usando strings, loops e entrada de dados do usuário em Python.
+Pratique strings, listas, laços de repetição, condicionais e entrada de dados ao criar um jogo da Forca no qual o jogador tenta adivinhar uma palavra secreta antes de ficar sem tentativas.
 
-## 🎯 O Que Você Vai Construir
+## 📝 Tarefas
 
-Crie um jogo da Forca onde os jogadores adivinham letras para revelar uma palavra oculta antes de esgotar as tentativas.
+### 🛠️ Implementar a lógica do jogo
 
-**Habilidades praticadas:** Manipulação de strings, loops, condicionais, seleção aleatória
+#### Descrição
+Prepare as palavras e os dados necessários para uma partida. Escolha uma palavra secreta aleatoriamente e acompanhe as letras descobertas e as tentativas incorretas.
 
-## ✅ Requisitos Obrigatórios
+#### Requisitos
+O programa concluído deve:
 
-Seu jogo deve:
-- Selecionar palavras aleatoriamente de uma lista predefinida
-- Aceitar palpites de letras e mostrar o progresso atual (formato _ _ _)
-- Rastrear tentativas incorretas restantes
-- Encerrar quando a palavra for adivinhada ou as tentativas esgotarem
-- Exibir mensagens de vitória/derrota
+- Escolher aleatoriamente uma palavra de uma lista predefinida.
+- Exibir cada letra ainda não descoberta como `_`, mantendo visíveis as letras já acertadas.
+- Registrar os palpites e descontar uma tentativa apenas quando o palpite estiver incorreto.
+- Definir um limite de tentativas incorretas e acompanhar quantas restam.
+
+### 🛠️ Criar o fluxo da partida
+
+#### Descrição
+Use um laço para conduzir a partida, receber palpites do jogador e atualizar a exibição até que ele vença ou fique sem tentativas.
+
+#### Requisitos
+O programa concluído deve:
+
+- Solicitar ao jogador um palpite de letra a cada rodada.
+- Informar o progresso da palavra e as tentativas incorretas restantes após cada palpite.
+- Encerrar a partida quando todas as letras forem descobertas ou quando as tentativas acabarem.
+- Exibir uma mensagem de vitória ou derrota; em caso de derrota, revelar a palavra secreta.
